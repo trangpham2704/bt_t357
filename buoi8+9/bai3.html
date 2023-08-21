@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>SỐ NGÀY TRONG THÁNG </h1>
+    <input type="text" name="hq" id="hq">
+    <button type="button" onclick="tinh()">Tính</button>
+    <h2 id="ngay" style="color: aqua;"></h2>
+    <h3 id="tb" style="color: crimson;"></h3>
+    <script>
+        function tinh() {
+            let tb;
+            let hq = document.getElementById('hq');
+            let ngay1 = 0;
+            let ngay = 0;
+            switch (hq) {
+                case '1':
+                    ngay = 31;
+                    document.getElementById("ngay").innerHTML = ("Tháng có: " + ngay + "ngày");
+                    break;
+                case '3':
+                    ngay = 31;
+                    document.getElementById("ngay").innerHTML = ("Tháng có: " + ngay + "ngày");
+                    break;
+                case '5':
+                    ngay = 31;
+                    document.getElementById("ngay").innerHTML = ("Tháng có: " + ngay + "ngày");
+                    break;
+                case '7':
+                    ngay = 31;
+                    document.getElementById("ngay").innerHTML = ("Tháng có: " + ngay + "ngày");
+                    break;
+                case '8':
+                    ngay = 31;
+                    document.getElementById("ngay").innerHTML = ("Tháng có: " + ngay + "ngày");
+                    break;
+                case '10':
+                    ngay = 31;
+                    document.getElementById("ngay").innerHTML = ("Tháng có: " + ngay + "ngày");
+                    break;
+                case '12':
+                    ngay = 31;
+                    document.getElementById("ngay").innerHTML = ("Tháng có: " + ngay + "ngày");
+                    break;
+                case '4':
+                    ngay = 30;
+                    document.getElementById("ngay").innerHTML = ("Tháng có: " + ngay + "ngày");
+                    break;
+                case '6':
+                    ngay = 30;
+                    document.getElementById("ngay").innerHTML = ("Tháng có: " + ngay + "ngày");
+                    break;
+                case '9':
+                    ngay = 30;
+                    document.getElementById("ngay").innerHTML = ("Tháng có: " + ngay + "ngày");
+                    break;
+                case '11':
+                    ngay = 30;
+                    document.getElementById("ngay").innerHTML = ("Tháng có: " + ngay + "ngày");
+                    break;
+
+                case '2':
+
+                    ngay = 28;
+                    ngay1 = 29;
+                    document.getElementById("ngay").innerHTML = ("Tháng có: " + ngay + "và " + ngay1 +
+                        " ngày ");
+                    break
+
+                default:
+                    tb = "không có tháng nào đúng";
+                    document.getElementById("tb").innerHTML = tb;
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
