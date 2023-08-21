@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>AMOUNT</th>
+            <th>FROM CURRENCY</th>
+            <th> TO CURRENCY</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th> <input type="text" name="" id="money"></th>
+            <th><select name="" id="from">
+                <option value="1" > AMERICAN DOLLAR</option>
+                <option value="23000"> VIỆT NAM ĐỒNG</option>
+            </select></th>
+            <th><select name="" id="to">
+                <option value="1"> AMERICAN DOLLAR</option>
+                <option value="23000"> VIỆT NAM ĐỒNG</option>
+            </select></th>
+            <th><button onclick="doitien()">Convert</button></th>
+        </tr>
+    </table>
+    <h2 id="result"></h2>
+    <script>
+        function doitien() {
+            let money = +document.getElementById('money').value;
+            let to = +document.getElementById('to').value;
+            let from = +document.getElementById('from').value;
+            if (money < 0) {
+                alert('nhập sai số');
+            } else {
+                let result1 = money * from / to;
+                document.getElementById('result').innerHTML = result1;
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
